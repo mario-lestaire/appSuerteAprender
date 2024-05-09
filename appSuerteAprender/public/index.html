@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Estudio - La Suerte De Aprender</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header">
+            <h1>La Suerte De Aprender</h1>
+            <select id="subjectSelector" onchange="displayFiles(this.value)">
+                <option value="">Elige una asignatura</option>
+                <option value="Lengua y Literatura">Lengua y Literatura</option>
+                <option value="Matemáticas">Matemáticas</option>
+                <option value="Inglés">Inglés</option>
+                <option value="Francés">Francés</option>
+                <option value="Historia">Historia</option>
+                <option value="Física y Química">Física y Química</option>
+            </select>
+        </header>
+        <!-- Este es el div donde se mostrarán los archivos y temas de las asignaturas -->
+        <div id="fileDisplayArea" class="file-display-area"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
